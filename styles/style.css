@@ -14,7 +14,6 @@ body {
   font-size: 18px;
 }
 
-
 .header-menu {
   justify-self: start;
   line-height: 21.13px;
@@ -30,6 +29,7 @@ body {
   list-style: circle;
 }
 
+/* немного сдвинул вторую ссылку в хедере для соответствия макету */
 .header__links-list-item:nth-child(2) {
   padding-right: 3px;
 }
@@ -49,13 +49,7 @@ body {
   height: 107px;
 }
 
-
-.header-logo-image {
-  width: 136px;
-  height: 107px;
-}
-
-.adвress {
+.address {
   line-height: 24.3px;
 }
 
@@ -64,14 +58,9 @@ body {
   max-width: 240px;
 }
 
-.phone {
-  border-bottom: 1px solid black;
-  text-decoration: none;
-}
-
-.email {
-  border-bottom: 1px solid black;
-  text-decoration: none;
+/* опускает подчеркивание вниз в хедере и футере для соответствия макету */
+.address-underline {
+  text-underline-offset: 3px;
 }
 
 .cover {
@@ -114,7 +103,7 @@ body {
 }
 
 .letter-spacing-extended {
-  letter-spacing: 30px;
+  letter-spacing: 0.3em;
 }
 
 .cover-title span {
@@ -324,10 +313,6 @@ body {
   text-decoration: underline;
   text-underline-offset: 3px;
 }
-/* для активной ссылки меню хедера и футера */
-.active {
-  text-decoration: none;
-}
 
 .footer-social-list {
   display: flex;
@@ -340,5 +325,10 @@ body {
 .footer-social-list-item {
   width: 48px;
   height: 48px;
+}
+
+/* для активной ссылки меню хедера и футера */
+.active {
+  text-decoration: none;
 }
 
