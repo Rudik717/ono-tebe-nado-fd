@@ -3,7 +3,7 @@ body {
   color: rgb(0,0,0);
   font-weight: 400;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 120%;
 }
 
 .header {
@@ -16,7 +16,7 @@ body {
 
 .header-menu {
   justify-self: start;
-  line-height: 21.13px;
+  line-height: 100%;
 }
 
 .header__links-list {
@@ -50,17 +50,18 @@ body {
 }
 
 .address {
-  line-height: 24.3px;
+  line-height: 135%;
 }
 
 .header__address {
   justify-self: end;
   max-width: 240px;
+  font-style: normal;
 }
 
 /* опускает подчеркивание вниз в хедере и футере для соответствия макету */
 .address-underline {
-  text-underline-offset: 3px;
+  text-underline-offset: 4px;
 }
 
 .cover {
@@ -72,12 +73,13 @@ body {
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 125% auto;
+  background-size: cover;
 
 }
 /* используется и для секции cover и для сексии lots */
 .overlay {
   position: absolute;
+  inset: 0;
   z-index: 0;
   width: 100%;
   height: 100%;
@@ -85,7 +87,7 @@ body {
 }
 
 .cover-content {
-  position: absolute;
+  position: relative;
   min-width: 100%;
   min-height: 100%;
   padding-top: 50px;
@@ -99,7 +101,8 @@ body {
   padding-top: 115px;
   font-weight: 700;
   font-size: 100px;
-  line-height: 115px;
+  line-height: 115%;
+  text-transform: uppercase;
 }
 
 .letter-spacing-extended {
@@ -133,17 +136,17 @@ body {
 }
 
 .cover__description-text {
-  line-height: 28px;
+  line-height: 127%;
   text-transform: uppercase;
   word-spacing: 18.5px;
 }
 
 .bet-button {
   border: 1px solid white;
-  padding: 12px 32px 11px 31px;
+  padding: 13px 32px 13px 31px;
   color: rgb(255,255,255);
   font-weight: 500;
-  line-height: 25.83px;
+  line-height: 100%;
   text-transform: uppercase;
   background-color: rgba(255, 255, 255, 0);
 }
@@ -158,7 +161,7 @@ body {
   margin-left: 40px;
   font-weight: 700;
   font-size: 40px;
-  line-height: 46.96px;
+  line-height: 120%; /* выбрано 120%, а не 100% для соответствия макету */
   text-transform: uppercase;
 }
 
@@ -172,31 +175,21 @@ body {
 }
 
 .lots__card-list-item {
-  position: relative;
   width: 334px;
-  height: 596px;
+  min-height: 596px;
   list-style: none;
 }
 
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 550px 596px;
 }
 
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 540px 596px;
 }
 
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 170%;
 }
 
 .card-link {
@@ -206,17 +199,25 @@ body {
 
 .card {
   position: relative;
+  height: 100%;
+  padding: 48px 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.card-content {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  padding: 48px 40px;
 }
 
 .card__title {
   font-weight: 700;
   font-size: 22px;
-  line-height: 26.4px;
+  line-height: 120%;
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
@@ -267,7 +268,7 @@ body {
   align-self: center;
   font-weight: 700;
   font-size: 40px;
-  line-height: 46.96px;
+  line-height: 110%;
   text-transform: uppercase;
 }
 
@@ -295,7 +296,7 @@ body {
 
 .footer-menu {
   justify-self: center;
-  line-height: 21.13px;
+  line-height: 110%;
 }
 
 .footer-menu-list {
@@ -311,7 +312,7 @@ body {
 
 .footer-menu-link {
   text-decoration: underline;
-  text-underline-offset: 3px;
+  text-underline-offset: 4px;
 }
 
 .footer-social-list {
