@@ -51,12 +51,12 @@ body {
 
 .address {
   line-height: 135%;
+  font-style: normal;
 }
 
 .header__address {
   justify-self: end;
   max-width: 240px;
-  font-style: normal;
 }
 
 /* опускает подчеркивание вниз в хедере и футере для соответствия макету */
